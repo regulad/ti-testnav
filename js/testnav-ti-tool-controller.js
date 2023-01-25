@@ -38,3 +38,10 @@ function createCalculator(calcType) {
         .one(window.tiCalcInstance.readyEvent, onTICalcReady);
     window.tiCalcInstance.initialize(isSecure());
 }
+
+// check to see if we loaded with a ti calc name
+const urlSearchParamters = new URLSearchParams(window.location.search);
+const maybeCalculatorName = urlSearchParamters.get("c");
+if (maybeCalculatorName && maybeCalculatorName.length > 0) {
+    createCalculator(maybeCalculatorName.toUpperCase());
+}

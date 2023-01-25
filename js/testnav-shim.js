@@ -1,5 +1,5 @@
 const TN8 = {
-    baseUrl: window.document.location.origin + "/",
+    baseUrl: window.location.search.length > 0 ? window.location.href.slice(0, -(window.location.search.length)) : window.location.href,
     throw: function(errorString, errorCode) {
         console.warn(errorString);
         console.warn(`Code: ${errorCode}`);
