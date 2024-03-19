@@ -10,36 +10,49 @@
         <script src="js/ticalccontroller-lib.js"></script>
         <script src="js/testnav-ti-tool-controller.js"></script>
     </head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HBDHK87LSC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-HBDHK87LSC');
+    </script>
+    
     <body>
-        <header>
-            <h1>TestNav TI Calculators</h1>
-            <p>Access several different TI calculators from TestNav outside of TestNav using the tool below.</p>
-            <p>This website is intended to provide access to these tools that would traditonally be unavailble to a student.</p>
-        </header>
+        <section class="container">
+            <header>
+                <h1>TestNav TI Calculators</h1>
+                <p>Access several different TI calculators from TestNav outside of TestNav using the tool below.</p>
+                <p>This website is intended to provide access to these tools that would traditonally be unavailble to a student.</p>
+            </header>
 
-        <hr>
+            <hr>
 
-        <div id="calculatorOpenMenu">
-            <h2>Choose a calculator type to open</h2>
-            <button type="button" class="btn btn-primary" onclick="createCalculator('TI84')">TI-84 Plus CE&#8482; Graphing Calculator</button>
-            <button type="button" class="btn btn-primary" onclick="createCalculator('TI30')">TI-30XS&#8482; Multiview Scientific Calculator</button>
-            <button type="button" class="btn btn-primary" onclick="createCalculator('TI108')">TI-108&#8482; Elementary Calculator</button>
-        </div>
+            <div id="calculatorOpenMenu">
+                <h2>Choose a calculator type to open</h2>
+                <button type="button" class="btn btn-primary" onclick="createCalculator('TI84')">TI-84 Plus CE&#8482; Graphing Calculator</button>
+                <button type="button" class="btn btn-primary" onclick="createCalculator('TI30')">TI-30XS&#8482; Multiview Scientific Calculator</button>
+                <button type="button" class="btn btn-primary" onclick="createCalculator('TI108')">TI-108&#8482; Elementary Calculator</button>
+            </div>
 
-        <div id="calculatorContainer">
-            <div id='calculatorDiv' class='calculatorDiv' style='position:fixed; top:120px; left:50%; z-index:1040;' tabIndex=0></div>
-        </div>
+            <div id="calculatorContainer">
+                <div id='calculatorDiv' class='calculatorDiv' style='position:fixed; top:120px; left:50%; z-index:1040;' tabIndex=0></div>
+            </div>
 
-        <hr>
-        
-        <footer>
-            <h4>Created by <i>Parker Wahle</i> <a href="https://regulad.xyz">https://regulad.xyz</a></h4>
+            <hr>
 
-            <p>TI-84 Plus CE&#8482;, TI-30&#8482;, and TI-108&#8482; are trademarks of Texas Instruments. TestNav&reg; is a trademark of Pearson Education, Inc. or its affiliate(s). Texas Instruments and Pearson Education, Inc. are in no way associated with this website.</p>
-            <p>This websites is intended for educational purposes only and is not intended to infringe the rights of any of the before mentioned companies.</p>
-            <p>Consider using the <a href="https://education.ti.com/en/products/online-calculators/ti-84ce-online-calc">official online calculator</a>.</p>
+            <footer>
+                <h4>Created by <i>Parker Wahle</i> <a href="https://regulad.xyz">https://regulad.xyz</a></h4>
 
-            <p><a href="https://www.regulad.xyz/#Contact">Contact & DMCA Requests</a></p>
-        </footer>
+                <p>TI-84 Plus CE&#8482;, TI-30&#8482;, and TI-108&#8482; are trademarks of Texas Instruments. TestNav&reg; is a trademark of Pearson Education, Inc. or its affiliate(s). Texas Instruments and Pearson Education, Inc. are in no way associated with this website.</p>
+                <p>This websites is intended for educational purposes only and is not intended to infringe the rights of any of the before mentioned companies.</p>
+                <p>Consider using the <a href="https://education.ti.com/en/products/online-calculators/ti-84ce-online-calc">official online calculator</a>.</p>
+
+                <p><a href="https://www.regulad.xyz/#Contact">Contact & DMCA Requests</a></p>
+            </footer>
+        </section>
     </body>
 </html>
